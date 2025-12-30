@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invariant Network — Curated Quant & ML</title>
+
+  <!-- Optional: Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0a0c;
+      --card-bg: #141417;
+      --text-main: #e4e4e7;
+      --text-dim: #9ca3af;
+      --accent: #ffffff;
+      --border: #27272a;
+      --soft-glow: rgba(255,255,255,0.06);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(800px 400px at 50% -20%, #2a2a2f 0%, transparent 70%),
+        radial-gradient(600px 300px at 80% 10%, #1f1f23 0%, transparent 60%);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 96px 24px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--text-dim);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 72px;
+    }
+
+    .card {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.02),
+        rgba(255,255,255,0)
+      ), var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 36px;
+      border-radius: 14px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #3f3f46;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-dim);
+      margin-bottom: 22px;
+    }
+
+    ul { list-style: none; }
+
+    li {
+      margin-bottom: 14px;
+      display: flex;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #d4d4d8;
+    }
+
+    li::before {
+      content: "→";
+      color: var(--text-dim);
+    }
+
+    .cta-section {
+      text-align: center;
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0)
+      );
+      padding: 56px 32px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .cta-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .cta-section p {
+      color: var(--text-dim);
+      max-width: 520px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .button.secondary {
+      border: 1px solid var(--border);
+      color: var(--accent);
+      background: transparent;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 4px var(--soft-glow);
+    }
+
+    footer {
+      margin-top: 96px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      opacity: 0.6;
+    }
+
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Invariant Network</h1>
+      <p class="tagline">
+        Selective, manual matching for high-stakes Quantitative Finance and Machine Learning roles.
+      </p>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Philosophy</h2>
+        <ul>
+          <li>Depth over volume</li>
+          <li>Manual screening only</li>
+          <li>No recruiter spam</li>
+          <li>Strict confidentiality</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Network</h2>
+        <ul>
+          <li>Tier-1 quantitative researchers</li>
+          <li>Applied ML & AI specialists</li>
+          <li>Model risk & validation experts</li>
+          <li>High-signal hiring teams</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h3>Inquiry & Access</h3>
+      <p>
+        All submissions are reviewed manually. Access is intentionally limited to preserve quality.
+      </p>
+
+      <div class="buttons">
+        <!-- Replace URLs below -->
+        <a href="https://forms.gle/CANDIDATE_FORM_LINK"
+           target="_blank"
+           rel="noopener"
+           class="button primary">
+          Candidate Screening
+        </a>
+
+        <a href="https://forms.gle/EMPLOYER_FORM_LINK"
+           target="_blank"
+           rel="noopener"
+           class="button secondary">
+          Employer Intake
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Invariant Network · Independent initiative · No institutional affiliation
+    </footer>
+  </main>
+
+</body>
+</html>
